@@ -1,31 +1,39 @@
-/* Title Page  */
-
-
-.carouselArrow {
-    width: 40px !important;
-    height: 40px !important;
-}
-.main-text {
-    color: #fff;
-    position: absolute;
-    padding-top: 50px;
-    top: 70px;
-    width: 96.6667%;
+/* Cards */
+* {
+  font-family: "Courier New", Courier, monospace;
 }
 
-.carousel-item {
-    opacity: 80%;
+.articles {
+  background-color: #eeeee6;
+  flex-direction: row;
+  position: relative;
+  flex-wrap: wrap;
 }
 
-.title-message {
-    font-size: 8vw !important;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: black 1px 0px 10px;
+.card-friday {
+  top: -50px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  margin: 0 1rem 0.5rem 6rem;
+  padding: 0;
+  border-style: none;
+  width: 24%;
+}
+.friday-card-heading {
+  font-weight: 500;
 }
 
-.title-message2 {
-    font-size: 3vw !important;
-    font-family: 'Roboto',sans-serif;
-    text-shadow: black 1px 0px 10px;
+.card-saturday {
+  /* margin-left: 12rem;
+  margin-top: 3rem; */
+  margin: 4rem 0rem 0.5rem 15rem;
+  padding: 0;
+  height: 60%;
 }
 
+.card-stay-in-contact {
+  width: 20%;
+  margin-left: 9rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}

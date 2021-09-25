@@ -1,0 +1,29 @@
+/* Navbar Styling */
+.navbar {
+  position: absolute;
+  top: 0.9rem;
+  padding-left: 2rem;
+  z-index: 10;
+  width: 100%;
+}
+
+.navbar-logo {
+  width: 11rem;
+}
+
+.navbar-items {
+  padding: 0 2rem;
+}
+/* Navbar link animation underlines */
+.nav-link {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  content: "";
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+
+/* Card article Section */
