@@ -1,39 +1,48 @@
-/* Cards */
-* {
+h1,
+p,
+h2 {
   font-family: "Courier New", Courier, monospace;
 }
 
-.articles {
+.articles-section {
   background-color: #eeeee6;
-  flex-direction: row;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0;
   flex-wrap: wrap;
 }
 
-.card-friday {
+.lunch-card {
   top: -50px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 500;
-  margin: 0 1rem 0.5rem 6rem;
+}
+
+.saturday-card {
+  top: 2rem;
+  height: 20%;
+}
+
+.lunch-card,
+.saturday-card {
+  margin: 0 8rem;
   padding: 0;
   border-style: none;
-  width: 24%;
-}
-.friday-card-heading {
-  font-weight: 500;
 }
 
-.card-saturday {
-  /* margin-left: 12rem;
-  margin-top: 3rem; */
-  margin: 4rem 0rem 0.5rem 15rem;
+.wine-card,
+.connected-card,
+.hello-card {
   padding: 0;
-  height: 60%;
+  margin: 3rem;
+  width: 70%;
 }
 
-.card-stay-in-contact {
-  width: 20%;
-  margin-left: 9rem;
-  margin-bottom: 2rem;
-  margin-top: 0;
+.wine-card {
+  margin-top: 7rem;
+}
+
+@media (max-width: 972px) {
+  .lunch-card {
+    /* top: 0px; */
+    margin-top: 7rem;
+  }
 }
