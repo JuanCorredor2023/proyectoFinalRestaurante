@@ -14,16 +14,14 @@
 .navbar-items {
   padding: 0 2rem;
 }
-/* Navbar link animation underlines */
-.nav-link {
+
+.nav-item a {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.nav-link:hover {
-  content: "";
+.nav-item a:hover {
   border-bottom: 1px solid #fff;
   cursor: pointer;
 }
 
-/* Card article Section */
