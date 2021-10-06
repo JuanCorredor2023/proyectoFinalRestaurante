@@ -1,0 +1,27 @@
+/* Navbar Styling */
+.navbar {
+  position: absolute;
+  top: 0.9rem;
+  padding-left: 2rem;
+  z-index: 10;
+  width: 100%;
+}
+
+.navbar-logo {
+  width: 11rem;
+}
+
+.navbar-items {
+  padding: 0 2rem;
+}
+
+.nav-item a {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-item a:hover {
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+

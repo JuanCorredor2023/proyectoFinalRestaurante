@@ -7,6 +7,10 @@ const db = require("./database")
 
 //importacion de rutas
 const UsersRoutes = require("./routes/users.routes")
+const contacRoutes =require("./router/contact.routes")
+const authRoutes =require("./router/user.routes")
+
+const app = express()
 
 //modulo express
 const app = express()
@@ -22,5 +26,7 @@ app.use(bodyParser.urlencoded({limit: '50mb'}))
 
 //routes
 app.use("/users", UsersRoutes)
+app.use('/contact',contacRoutes)
+app.use('/auth',authRoutes)
 
 app.listen(port, () => console.log("Api corriendo correctamente"))

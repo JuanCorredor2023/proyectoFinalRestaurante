@@ -1,31 +1,58 @@
-/* Title Page  */
-
-
-.carouselArrow {
-    width: 40px !important;
-    height: 40px !important;
-}
-.main-text {
-    color: #fff;
-    position: absolute;
-    padding-top: 50px;
-    top: 70px;
-    width: 96.6667%;
+h1,
+p,
+h2 {
+  font-family: "Courier New", Courier, monospace;
 }
 
-.carousel-item {
-    opacity: 80%;
+.articles-section {
+  background-color: #eeeee6;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
-.title-message {
-    font-size: 8vw !important;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: black 1px 0px 10px;
+.lunch-card {
+  top: 2rem;
 }
 
-.title-message2 {
-    font-size: 3vw !important;
-    font-family: 'Roboto',sans-serif;
-    text-shadow: black 1px 0px 10px;
+.saturday-card {
+  top: 2rem;
+  height: 20%;
 }
 
+.lunch-card,
+.saturday-card {
+  margin: 0 8rem;
+  padding: 0;
+  border-style: none;
+}
+
+.wine-card,
+.connected-card,
+.hello-card {
+  padding: 0;
+  margin: 3rem;
+  width: 70%;
+}
+
+.wine-card {
+  margin-top: 7rem;
+}
+.btn-10 {
+  transition: all 0.3s ease;
+  overflow: hidden;
+  background-color: #eeeee6;
+}
+
+.btn-10:hover {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+@media (max-width: 972px) {
+  .lunch-card {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}

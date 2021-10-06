@@ -1,0 +1,70 @@
+<div class="d-flex mt-5">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header bg-warning text-black">
+          <h5>Registrar Usuarios Gestores</h5>
+        </div>
+        <div class="card-body">
+          <!-- Form to register a user -->
+          <form #userform="ngForm"   class="p-3">
+            <input
+            #name="ngModel"
+            [(ngModel)]="authService.selectedAuth._id"
+              type="hidden"
+              class="form-control"
+              id="_id"
+              name="_id"
+            />
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+              #name="ngModel"
+              [(ngModel)]="authService.selectedAuth.email"
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+              #name="ngModel"
+              [(ngModel)]="authService.selectedAuth.password"
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+              />
+            </div>
+                        
+            <button class="btn btn-dark mr-3"(click)="createAuth(userform)">Guardar</button>
+            <button class="btn btn-dark"(click)="clean(userform)">Limpiar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="table table-striped hover">
+        <thead class="bg-warning text-black">
+          <tr>
+           
+            <th scope="col">email</th>
+            <th scope="col">password</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let auth of authService.auth">
+            <td>{{ auth.email }}</td>
+            <td>{{ auth.password }}</td>
+            <td>
+              <button class="btn btn-warning m-1"(click)= "fillFields(auth)">Editar</button>
+              <button class="btn btn-danger m-1"(click)= "deleteUser(auth._id)">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+</div>
