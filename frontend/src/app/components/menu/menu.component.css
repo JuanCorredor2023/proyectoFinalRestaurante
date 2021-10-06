@@ -1,17 +1,1 @@
-/* Menu */
-.img-fondo{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(/assets/IMG/adrien-olichon-_GH9LwhlSO4-unsplash.jpg);
-    background-position-y: 10%;
-}
-.menuComida{
-    margin-top: 50px;
-    padding: 30px;
-    margin-bottom: 100px;
-}
-.tit-1{
-    margin-top: 100px;
-    color: #fff;
-    text-align: center;
-}
+
