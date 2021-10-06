@@ -22,15 +22,12 @@
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
     "@popperjs/core": "^2.10.1",
-<<<<<<< HEAD
     "@sweetalert2/themes": "^5.0.5",
     "alife-file-to-base64": "0.0.4",
     "base-64": "^1.0.0",
     "body-parser": "^1.19.0",
-=======
     "angular-datatables": "^12.0.0",
     "angularfire2": "^5.0.0-rc.12",
->>>>>>> dev
     "bootstrap": "^4.6.0",
     "core-js": "^2.5.4",
     "datatables.net": "^1.11.3",
@@ -44,10 +41,7 @@
     "material-dialog": "0.0.1",
     "materialize-css": "^1.0.0-rc.2",
     "rxjs": "~6.6.0",
-<<<<<<< HEAD
     "sweetalert": "^2.1.2",
-=======
->>>>>>> dev
     "sweetalert2": "^11.1.7",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

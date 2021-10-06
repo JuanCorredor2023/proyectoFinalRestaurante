@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 //modulo de peticiones - 1
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 //imagenes
 import { AlifeFileToBase64Module } from 'alife-file-to-base64';
@@ -15,13 +15,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { NavbarComponent } from './tools/navbar/navbar.component';
 import { FooterComponent } from './tools/footer/footer.component';
-<<<<<<< HEAD
 import { AdminMenuComponent } from './components/admin-menu/admin-menu.component';
 import { UsersadminComponent } from './components/usersadmin/usersadmin.component';
 import { CarritoComprasComponent } from './components/carrito-compras/carrito-compras.component';
-=======
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AuthGuard } from './tools/auth.guard.service';
 import { TokenInterceptorService } from './service/tokenInterceptor/token-interceptor.service.service';
@@ -41,7 +37,6 @@ import { UseradminComponent } from './components/useradmin/useradmin.component';
 
 
 import { NavbarHomeComponent } from './tools/navbar-home/navbar-home.component';
->>>>>>> dev
 
 @NgModule({
   declarations: [
@@ -52,25 +47,20 @@ import { NavbarHomeComponent } from './tools/navbar-home/navbar-home.component';
     ContactUsComponent,
     NavbarComponent,
     FooterComponent,
-<<<<<<< HEAD
     AdminMenuComponent,
     UsersadminComponent,
-    CarritoComprasComponent
-=======
+    CarritoComprasComponent,
     CommentComponent,
     UseradminComponent,
    
     NavbarHomeComponent
->>>>>>> dev
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-<<<<<<< HEAD
     HttpClientModule,
     FormsModule,
-    AlifeFileToBase64Module
-=======
+    AlifeFileToBase64Module,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
@@ -89,7 +79,6 @@ import { NavbarHomeComponent } from './tools/navbar-home/navbar-home.component';
       multi: true
     },
     
->>>>>>> dev
   ],
   bootstrap: [AppComponent],
   
