@@ -10,6 +10,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { NavbarComponent } from './tools/navbar/navbar.component';
 import { FooterComponent } from './tools/footer/footer.component';
+<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
@@ -30,6 +31,9 @@ import { UseradminComponent } from './components/useradmin/useradmin.component';
 
 
 
+=======
+import { NavbarHomeComponent } from './tools/navbar-home/navbar-home.component';
+>>>>>>> cesar
 
 @NgModule({
   declarations: [
@@ -40,9 +44,13 @@ import { UseradminComponent } from './components/useradmin/useradmin.component';
     ContactUsComponent,
     NavbarComponent,
     FooterComponent,
+<<<<<<< HEAD
     CommentComponent,
     UseradminComponent,
    
+=======
+    NavbarHomeComponent
+>>>>>>> cesar
   ],
   imports: [
     BrowserModule,
