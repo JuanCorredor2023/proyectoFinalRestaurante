@@ -9,18 +9,20 @@ import { UsersadminComponent } from './components/usersadmin/usersadmin.componen
 import { CommentComponent } from './components/comment/comment.component';
 import { UseradminComponent } from './components/useradmin/useradmin.component';
 import { AuthGuard } from './tools/auth.guard.service';
+import { Error404Component } from './components/error404/error404.component';
 
 
 const routes: Routes = [
-  //{path:'',component:HomeComponent},//
+  {path:'',component:HomeComponent},
   {path:'home',component:HomeComponent},
   {path:'about',component:AboutComponent},
   {path:'contact',component:ContactUsComponent},
-  {path:'adminMenu',component: UsersadminComponent},
+  {path:'adminMenu',component: UsersadminComponent, canActivate: [AuthGuard]},
   {path:'compras',component: CarritoComprasComponent},
   {path:'menu',component:MenuComponent},
   {path:'comment',component:CommentComponent,canActivate: [AuthGuard]},
   {path:'useradmin',component:UseradminComponent,canActivate: [AuthGuard]},
+  {path:'**',component:Error404Component}
 ];
 
 @NgModule({

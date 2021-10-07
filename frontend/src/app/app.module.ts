@@ -37,6 +37,7 @@ import { UseradminComponent } from './components/useradmin/useradmin.component';
 
 
 import { NavbarHomeComponent } from './tools/navbar-home/navbar-home.component';
+import { Error404Component } from './components/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { NavbarHomeComponent } from './tools/navbar-home/navbar-home.component';
     CommentComponent,
     UseradminComponent,
    
-    NavbarHomeComponent
+    NavbarHomeComponent,
+         Error404Component
   ],
   imports: [
     BrowserModule,
