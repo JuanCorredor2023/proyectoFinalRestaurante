@@ -6,22 +6,24 @@
     </button>
     <div class="collapse navbar-collapse navbar-items" id="navbarTogglerDemo01">
       <ul class="navbar-nav ml-auto">
-        <div *ngIf="!authService.loggedIn(); else loggedIn" class="form-inline">
+        <div *ngIf="!authService.loggedIn(); else loggedIn" class="form-inline m-2">
           <li class="nav-item" >
-            <a class="nav-link text-dark" href="/menu">Menú</a>
+            <a class="nav-link text-dark m-2" href="/menu"><b>Menú</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="/about">Nosotros</a>
+            <a class="nav-link text-dark m-2" href="/about"><b>Nosotros</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="/contact">Contactanos</a>
+            <a class="nav-link text-dark m-2" href="/contact"><b>Contactanos</b></a>
           </li>
   
           <!--Forms-->
+          
           <form class="form-inline" #loginForm="ngForm">
-            <div class="form-inline">
+            <div class="d-flex flex-column aling-items-center">
+            <div class="form-inline m-3">
               <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">Email  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
                 <input
                   #name="ngModel"
                   [(ngModel)]="authService.selectedAuth.email"
@@ -33,9 +35,9 @@
               </div>
                 
               </div>
-              <div class="form-inline">
+              <div class="form-inline m-3">
                 <div class="form-group">
-                  <label for="password">Contraseña</label>
+                  <label for="password">Contraseña </label>
                   <input
                     #name="ngModel"
                     [(ngModel)]="authService.selectedAuth.password"
@@ -47,27 +49,30 @@
                 </div>
                 
               </div>
+            </div>
+            
         
               <button class="btn btn-warning" (click)="signin(loginForm)">Iniciar Sesi&oacute;n</button>
           </form>
         </div>
         
+        
       </ul>
       <ng-template #loggedIn>
         <ul class="navbar-nav md-auto">
             <li class="nav-item">
-            <a class="nav-link text-dark" href="/menu">Menú</a>
+            <a class="nav-link text-dark" href="/menu"><b>Menú</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="/about">Nosotros</a>
+            <a class="nav-link text-dark" href="/about"><b>Nosotros</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="/contact">Contactanos</a>
+            <a class="nav-link text-dark" href="/contact"><b>Contactanos</b></a>
           </li>
           <div class="d-flex">
             <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Opciones
+              <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Administrador
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
                 <a class="dropdown-item text-wrap text-danger" href="/adminMenu"style="width: 7rem">Administrar Menú</a>
