@@ -18,10 +18,10 @@ const routes: Routes = [
   {path:'about',component:AboutComponent},
   {path:'contact',component:ContactUsComponent},
   {path:'adminMenu',component: UsersadminComponent, canActivate: [AuthGuard]},
-  {path:'compras',component: CarritoComprasComponent},
-  {path:'menu',component:MenuComponent},
   {path:'comment',component:CommentComponent,canActivate: [AuthGuard]},
   {path:'useradmin',component:UseradminComponent,canActivate: [AuthGuard]},
+  {path:'compras',component: CarritoComprasComponent},
+  {path:'menu',component:MenuComponent},
   {path:'**',component:Error404Component}
 ];
 
