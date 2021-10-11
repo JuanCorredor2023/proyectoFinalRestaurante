@@ -1,6 +1,10 @@
-<section class="section bg-light ">
+<section class="section">
     <!-- botones -->
-    <button class="btn btn-dark btn-lg btn-block"(click)='buyProducts()'>Ir al carrito</button>
+    <img class="w-100 banner-about-image" src="../../../assets/images/UC-SLIDER-04-1640x620.png" alt="Fourth slide" />
+    <div class="btn-cart-container">
+      <button class="btn-cart btn btn-lg"(click)='buyProducts()'>Ir al carrito<i class=" ml-2 fas fa-shopping-cart"></i></button>
+
+    </div>
     <!-- cards -->
     <h1 class="text-center m-4 text-dark">Platos Fuertes</h1>
 
@@ -16,7 +20,7 @@
               <p class="card-text">
                {{user.description}}
               </p>
-              <a  class="btn btn-primary"(click)='addProduct({name:user.name, description:user.description})'>Añadir al carrito</a>
+              <a  class="btn"(click)='addProduct({name:user.name, description:user.description})'>Añadir al carrito</a>
             </div>
           </div>
         </div>
@@ -35,7 +39,7 @@
               <p class="card-text">
                {{user.description}}
               </p>
-              <a class="btn btn-primary"(click)='addProduct({name:user.name, description:user.description})'>Añadir al carrito</a>
+              <a class="btn"(click)='addProduct({name:user.name, description:user.description})'>Añadir al carrito</a>
             </div>
           </div>
         </div>
@@ -54,7 +58,7 @@
               <p class="card-text">
                {{user.description}}
               </p>
-              <a class="btn btn-primary"(click)='addProduct({name:user.name, description:user.description})'>Añadir al carrito</a>
+              <a class="btn"(click)='addProduct({name:user.name, description:user.description})'>Añadir al carrito</a>
             </div>
           </div>
         </div>
@@ -73,7 +77,7 @@
               <p class="card-text">
                {{user.description}}
               </p>
-              <a  class="btn btn-primary"(click)='addProduct({name:user.name, description:user.description})'>Añadir al carrito</a>
+              <a  class="btn"(click)='addProduct({name:user.name, description:user.description})'>Añadir al carrito</a>
             </div>
           </div>
         </div>
