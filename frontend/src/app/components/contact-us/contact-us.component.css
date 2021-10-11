@@ -1,4 +1,27 @@
+#contact-container{
+    background-color: #eeeee6;
+}
+.contact-banner-image{
+    width: 100%;
+    padding: 1% 5%;
+}
 /* Form conctactanos*/
 .form-container{
-    margin-bottom: 12rem;
+    padding-top: 5rem;
+    padding-bottom: 12rem;
+}
+
+.contact-form{
+    background-color: #fff;
+}
+
+.btn-submit-form{
+    background-color: #000;
+    color: white;
+}
+
+.btn-submit-form:hover{
+    background-color:#fff;
+    color: black;
+    border: 1px solid black;
 }
