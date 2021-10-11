@@ -17,3 +17,30 @@
 label{
     cursor: pointer;
 }
+
+.btn-options{
+    background-color: #000;
+    color: white;
+}
+
+.btn-options:hover{
+    background-color:#eeeee6;
+    color: black;
+    border: 1px solid black;
+}
+
+ul a:hover{
+    color: #000 !important;
+  }
+  li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #000;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
