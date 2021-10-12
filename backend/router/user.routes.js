@@ -10,6 +10,4 @@ router.get("/getAllUser", usersControllers.getAllUsers)
 router.delete("/deleteUser/:id_user", usersControllers.deleteUser)
 
 
-
-
 module.exports = router;

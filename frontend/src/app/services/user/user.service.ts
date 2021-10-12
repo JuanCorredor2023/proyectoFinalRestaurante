@@ -45,4 +45,8 @@ export class UserService {
     return this.http.delete(`${this.URL_API}/users/deleteMenu/${_id}`)
   }
 
+  orderNow2(userToken: string){
+    return this.http.post(`${this.URL_API}/users/sendEmail`, userToken)
+  }
+
 }
