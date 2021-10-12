@@ -1,5 +1,6 @@
 const User = require("../model/user");
 const usersControllers = {};
+const nodemailer = require("nodemailer");
 
 const jwt = require("jsonwebtoken");
 
@@ -17,6 +18,32 @@ usersControllers.signup = async (req, res) => {
       await newUser.save();
   
       const token = jwt.sign({_id: newUser._id, email: newUser.email}, "pato")
+
+
+      const transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+          user: "uncommon074@gmail.com",
+          pass: "weAreARestaurant",
+        },
+      });
+  
+      const mailOptions = {
+        from: "uncommon074@gmail.com",
+        to: email,
+        subject: "Te has registrado en UnCommon!",
+        text: "Bienvenido a UnCommon!",
+        html: `<!DOCTYPE html> <html> <body> <h2 style="color: black">¡Bienvenido a UnCommon!</h2> <h3 style="color: black">Bienvenido a tu Restaurante-Bar favorito. Te damos la bienvenida y esperamos que la plataforma sea de tu agrado. Tenemos una gran variedad de platos y productos que te encantarán. Cualquier queja o sugerencia la puedes realizar mediante nuestro correo electrónico: uncommon074@gmail.com. </h3> <a href="www.uncommon.com">Haz click aquí para visitar nuestro sitio</a> </body> </html>`
+      };
+  
+      transporter.sendMail(mailOptions, function (error, info) {
+        if (error) {
+          console.log(error);
+        } else {
+          console.log("Email sent: " + info.response);
+        }
+      });
+
   
       res.status(201).json({ message: "Usuario creado", newUser });
     }
@@ -77,4 +104,7 @@ usersControllers.deleteUser = async (req, res) => {
       res.status(400).json({message: "Error", error})
   }
 }
+
+
+
   module.exports = usersControllers;
